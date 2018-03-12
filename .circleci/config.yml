@@ -6,4 +6,4 @@ jobs:
     steps:
       - checkout
       - run: mkdir reports
-      - run: $KATALON_KATALON_INSTALL_DIR/katalon -runMode=console -reportFolder=./reports -projectPath=./test.prj -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest"
+      - run: $KATALON_KATALON_INSTALL_DIR/katalon -runMode=console -reportFolder=$(pwd)/reports -projectPath=$(pwd)/test.prj -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest"
