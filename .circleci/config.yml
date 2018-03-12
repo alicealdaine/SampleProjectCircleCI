@@ -5,4 +5,5 @@ jobs:
       - image: katalonstudio/katalon-circleci
     steps:
       - checkout
-      - run: echo "hello world"
+      - run: mkdir reports
+      - run: $KATALON_KATALON_INSTALL_DIR/katalon -runMode=console -reportFolder=./reports -projectPath=./test.prj -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest"
