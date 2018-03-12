@@ -8,5 +8,5 @@ jobs:
       - run:
           name: Execute Katalon Studio
           command: |
-            KATALON_OPTS ='-browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest"'
+            export KATALON_OPTS = '-browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest"'
             $KATALON_KATALON_ROOT_DIR/scripts/katalon-execute.sh
