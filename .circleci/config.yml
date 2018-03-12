@@ -12,3 +12,5 @@ jobs:
           command: $KATALON_KATALON_CIRCLECI_ROOT_DIR/scripts/katalon-execute.sh
       - store-test_results:
           path: /katalon/katalon-circleci/report
+      - store-artifacts:
+          path: /katalon/katalon-circleci/report
