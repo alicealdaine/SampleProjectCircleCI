@@ -9,6 +9,6 @@ jobs:
       - checkout
       - run:
           name: Execute Katalon Studio
-          command: $KATALON_KATALON_CIRCLECI_ROOT_DIR/scripts/katalon-execute.sh
+          command: $KATALON_KATALON_CIRCLECI_ROOT_DIR/scripts/katalon-execute.sh && mkdir /report && mv /reports /report/katalon
       - store-test_results:
-          path: /reports
+          path: /report
