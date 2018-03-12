@@ -4,5 +4,5 @@
    <name>test</name>
    <tag></tag>
    <UUID>583426c5-5df5-426d-a45d-0063ad930363</UUID>
-   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeout>0</pageLoadTimeout>
 </Project>
